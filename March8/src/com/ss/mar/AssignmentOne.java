@@ -5,7 +5,7 @@ package com.ss.mar;
 
 /**
  * First assignment for 3/8/2021
- * Prints various text patterns
+ * Prints the text patterns from the image in the slides
  * @author Anthony
  *
  */
