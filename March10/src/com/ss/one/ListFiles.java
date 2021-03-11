@@ -19,7 +19,13 @@ public class ListFiles {
 		ListFiles list = new ListFiles();
 		
 		String path = args[0];
-		list.listFiles(path);
+		try {
+			list.listFiles(path);
+		}
+		catch(Exception e)
+		{
+			System.out.println("Path does not exist.");
+		}
 		
 	}
 	
