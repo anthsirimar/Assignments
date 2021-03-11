@@ -12,7 +12,7 @@ import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
 
 /**
- * Appends text to a given text file.
+ * Appends text to a text file.
  * @author Anthony
  *
  */
@@ -24,7 +24,7 @@ public class AppendText {
 	public static void main(String[] args) {
 		AppendText appendText = new AppendText();
 		
-		String filePath = args[0];
+		String filePath = "resources/text.txt";
 		
 		System.out.println("Enter text to append: ");
 		try(BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in))) {
