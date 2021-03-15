@@ -17,10 +17,7 @@ public class AssignmentTwo {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		AssignmentTwo assignmentTwo = new AssignmentTwo();
 		int maxAttempts = 5;
-		
-		
 		
 		//pick a random number between 1 and 100
 		int randomNumber = 1 + (int)(Math.random() * 100);
@@ -28,12 +25,14 @@ public class AssignmentTwo {
 		
 		System.out.print("Try to guess the random number. Enter an integer between 1 and 100: ");
 		int currentAttempt = 1;
+		Scanner scanner = null;
 		while(true)
 		{
 			int userNumber;
+			
 			//Get the user's input and make sure it's an integer
 			try {
-				Scanner scanner = new Scanner(System.in);
+				scanner =  new Scanner(System.in);
 				userNumber = scanner.nextInt();
 			}
 			catch(Exception e){
@@ -64,13 +63,11 @@ public class AssignmentTwo {
 			++currentAttempt;
 
 		}
+		if(scanner != null)
+		{
+			scanner.close();
+		}
 
-	}
-
-	public int getUserNumber() {
-		Scanner scanner = new Scanner(System.in);
-		int userNumber = scanner.nextInt();
-		return userNumber;
 	}
 	
 }
